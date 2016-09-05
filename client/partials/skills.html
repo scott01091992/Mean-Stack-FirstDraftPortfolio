@@ -1,0 +1,46 @@
+<div id='skills_page' class='container skills_animate_in' ng-controller='skills_controller'>
+	<div id='background_img'></div>
+	<div id='side_nav'><img src='./assets/navigation_hidden.png'>
+		<div id='slide_out_nav'>
+			<div ng-click="open('home')" class='nav_selection'>Home</div>
+			<div class='nav_selection'>Skills</div>
+			<div ng-click="open('Resume')" class='nav_selection'>Resume</div>
+			<div ng-click="open('Workflow')" class='nav_selection'>Workflow</div>
+			<div ng-click="open('Projects')" class='nav_selection'>Projects</div>
+		</div>
+	</div>
+	<header class='row'>
+		<a ng-click="open('home')"><img class='home_button' src='./assets/back_button.png'></a>
+		<h1>Skills</h1>
+	</header>
+	<nav class='row'>
+		<article ng-click="scrollTo(skill.skill)" ng-repeat='skill in skills'>
+			{{skill.skill}}
+		</article>
+	</nav>
+	<main class='row'>
+		<section ng-repeat='skill in skills'>
+			<h1 id="{{skill.skill}}">{{skill.skill}}</h1>
+			<article class='row' id='{{skill.skill}}'>
+				<aside class='col-xs-6'>
+					<ul>
+						<h3>{{skill.skill_type}}</h3>
+						<li ng-repeat='technology in skill.technologies'><span class='tech'>{{technology}}<span></li>
+					</ul>
+				</aside>
+				<div class='col-xs-6'>
+					<img ng-src='./assets/{{skill.img}}'>
+				</div>
+			</article>
+			<summary class='row'>
+				<h2>{{skill.title}}</h2>
+				<div class='col-xs-12'>
+						{{skill.description}}
+				</div>
+			</summary>
+		</section>
+	</main>
+	<footer class='row'>
+		<a ng-click='backTop()'><button>Back To Top</button></a>
+	</footer>
+</div>

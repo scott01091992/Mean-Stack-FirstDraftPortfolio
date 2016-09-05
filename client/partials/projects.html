@@ -1,0 +1,37 @@
+<div id="projects_page" class='container projects_animate_in' ng-controller='projects_controller'>
+	<div id='side_nav'><img src='./assets/navigation_hidden.png'>
+		<div id='slide_out_nav'>
+			<div ng-click="open('home')" class='nav_selection'>Home</div>
+			<div ng-click="open('Skills')" class='nav_selection'>Skills</div>
+			<div ng-click="open('Resume')" class='nav_selection'>Resume</div>
+			<div ng-click="open('Workflow')" class='nav_selection'>Workflow</div>
+			<div class='nav_selection'>Projects</div>
+		</div>
+	</div>
+	<header>
+		<h1>Projects</h1>
+		<div class='title_cover'></div>
+		<a class='back' ng-click="open('home')")><img class='home_button' src='./assets/back_button.png'></a>
+	</header>
+	<section ng-repeat="project in projects" class='row'>
+		<h2>{{project.name}}</h2>
+		<aside class='top'>
+			<h3>What is it?</h3>
+			<h4>{{project.description}}</h4>
+		</aside>
+		<aside class='bottom'>
+			<h3>Technologies used:</h3>
+			<ul>
+				<li ng-repeat="tech in project.technologies">{{tech}}</li>
+			</ul>
+		</aside>
+		<p>Time from project idea to current version: {{project.time}} | Contributors: {{project.contributors}}</p>
+		<article class='row'>
+			<img ng-src="./assets/{{project.video}}"></img>
+		</article>
+		<a>Source Code: {{project.source}}</a>
+		<hr>
+	</section>
+	<footer>
+	</footer>
+</div>

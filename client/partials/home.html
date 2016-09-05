@@ -1,0 +1,21 @@
+
+	<div id='welcome_page' class='container home_animate_in' ng-controller='sub_catagories_controller'>
+		<header class='row'>
+			<div id='background_img'></div>
+			<section class='col-xs-12'>
+					<img id='main_img' src='./assets/{{main_img.main_img}}'>
+					<h1>Web Dev Portfolio</h1>
+			</section>
+		</header>
+		<main class='row'>
+			<section class='col-xs-12'>
+				<figure ng-repeat='page in pages'>
+					<img ng-click='open(page.catagory)'ng-src='./assets/{{page.image}}'>
+					<h2>{{page.catagory}}</h2>
+				</figure>
+			</section>
+		</main>
+		<footer class='row'>
+			<h3>Designed By: Brandon Scott<h3>
+		</footer>
+	</div>

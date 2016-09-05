@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brandon's Portfolio</title>
+
+		<!-- css -->
+		<link rel='stylesheet' href='./css/bootstrap.min.css'>
+		<link rel='stylesheet' href='./css/styles.css'>
+
+		<!-- JQuery -->
+		<script type="text/javascript" src='./js/frameworks/jquery-2.2.0.min.js'></script>
+		<script type="text/javascript" src='./js/frameworks/jquery.scrollTo.js'></script>
+		<!-- angular -->
+		<script type="text/javascript" src='./js/frameworks/angular.min.js'></script>
+		<script type="text/javascript" src='./js/frameworks/angular-route.js'></script>
+		<script type="text/javascript" src='./js/frameworks/angular-animate.js'></script>
+		<script>
+			var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
+		</script>
+
+		<!-- Routes -->
+		<script type="text/javascript" src='./js/routes.js'></script>
+
+		<!-- Factories -->
+		<script type="text/javascript" src='./js/factories/sub_catagory_factory.js'></script>
+		<script type="text/javascript" src='./js/factories/workflow_factory.js'></script>
+		<script type="text/javascript" src='./js/factories/skill_factory.js'></script>
+		<script type="text/javascript" src='./js/factories/project_factory.js'></script>
+		<script type="text/javascript" src='./js/factories/resume_factory.js'></script>
+
+		<!-- Controllers -->
+		<script type="text/javascript" src='./js/controllers/sub_catagories_controller.js'></script>
+		<script type="text/javascript" src='./js/controllers/workflow_controller.js'></script>
+		<script type="text/javascript" src='./js/controllers/skills_controller.js'></script>
+		<script type="text/javascript" src='./js/controllers/resumes_controller.js'></script>
+		<script type="text/javascript" src='./js/controllers/projects_controller.js'></script>
+	</head>
+	<body ng-app='myApp'>
+		<div ng-view=''>
+		</div>
+	</body>
+</html>

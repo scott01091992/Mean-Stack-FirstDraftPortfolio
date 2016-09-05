@@ -1,0 +1,34 @@
+
+	<div id='resume_page' class='container resume_animate_in' ng-controller='resumes_controller'>
+		<div id='side_nav'><img src='./assets/navigation_hidden.png'>
+			<div id='slide_out_nav'>
+				<div ng-click="open('home')" class='nav_selection'>Home</div>
+				<div ng-click="open('Skills')" class='nav_selection'>Skills</div>
+				<div class='nav_selection'>Resume</div>
+				<div ng-click="open('Workflow')" class='nav_selection'>Workflow</div>
+				<div ng-click="open('Projects')" class='nav_selection'>Projects</div>
+			</div>
+		</div>
+		<header>
+			<a class='back' ng-click="open('home')")><img class='home_button' src='./assets/back_button.png'></a>
+			<h1>Brandon J Scott</h1>
+			<p>Cell: (253) 414-2299 | Scott.01091992@gmail.com</p>
+			<a href='#'>https://www.linkedin.com/in/brandon-scott-734844106</a>
+			<a href='#'>https://github.com/scott01091992</a>
+		</header>
+		<section>
+			<h2>Full Stack | Web Developer | Web Designer</h2>
+			<h3>Programming | Troubleshooting | Networking</h3>
+		</section>
+		<article ng-repeat="section in sections.sections">
+			<h4>{{section.section_head}}</h4>
+			<hr>
+			<summary ng-repeat="summary in section.summaries">
+				<h5>{{summary.head}}</h5><span class='date'>{{summary.date}}</span>
+				<span class='company'>{{summary.company}}</span>
+				<ul>
+					<li ng-repeat="list_item in summary.list">{{list_item}}</li>
+				<ul>
+			</summary>
+		</article>
+	</div>

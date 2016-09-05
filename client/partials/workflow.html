@@ -1,0 +1,26 @@
+
+<div id='workflow_page' class='container workflow_animate_in' ng-controller='workflow_controller'>
+	<div id='side_nav'><img src='./assets/navigation_hidden.png'>
+		<div id='slide_out_nav'>
+			<div ng-click="open('home')" class='nav_selection'>Home</div>
+			<div ng-click="open('Skills')" class='nav_selection'>Skills</div>
+			<div ng-click="open('Resume')" class='nav_selection'>Resume</div>
+			<div class='nav_selection'>Workflow</div>
+			<div ng-click="open('Projects')" class='nav_selection'>Projects</div>
+		</div>
+	</div>
+	<a class='back' ng-click="open('home')"><img class='home_button' src='./assets/back_button.png'></a>
+	<h1>The Process</h1>
+	<article ng-repeat="task in tasks">
+		<section>
+			<h2>{{task.name}}</h2>
+			<summary>{{task.description}}</summary>
+		</section>
+		<section>
+			<ul>
+				<li ng-repeat="step in task.steps">Step {{$index+1}}: {{step.step}}</li>
+			</ul>
+			<img ng-src="./../assets/{{task.img}}">
+		</section>
+	</article>
+</div>
