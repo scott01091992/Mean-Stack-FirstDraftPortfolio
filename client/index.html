@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Showcase for Brandon Scott's work.">
+		<meta name="keywords" content="Brandon, Scott, Portfolio, HTML5, CSS3, Bootstrap, JavaScript, Angular, MEAN, LAMP, Web, Developer, Designer, SQL, PHP, Photoshop, Illustrator">
+		<meta name="author" content="Brandon Scott">
 		<title>Brandon's Portfolio</title>
-
 		<!-- css -->
 		<link rel='stylesheet' href='./css/bootstrap.min.css'>
 		<link rel='stylesheet' href='./css/styles.css'>
-
 		<!-- JQuery -->
 		<script type="text/javascript" src='./js/frameworks/jquery-2.2.0.min.js'></script>
 		<script type="text/javascript" src='./js/frameworks/jquery.scrollTo.js'></script>
@@ -17,26 +19,23 @@
 		<script>
 			var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 		</script>
-
-		<!-- Routes -->
-		<script type="text/javascript" src='./js/routes.js'></script>
-
-		<!-- Factories -->
-		<script type="text/javascript" src='./js/factories/sub_catagory_factory.js'></script>
-		<script type="text/javascript" src='./js/factories/workflow_factory.js'></script>
-		<script type="text/javascript" src='./js/factories/skill_factory.js'></script>
-		<script type="text/javascript" src='./js/factories/project_factory.js'></script>
-		<script type="text/javascript" src='./js/factories/resume_factory.js'></script>
-
-		<!-- Controllers -->
-		<script type="text/javascript" src='./js/controllers/sub_catagories_controller.js'></script>
-		<script type="text/javascript" src='./js/controllers/workflow_controller.js'></script>
-		<script type="text/javascript" src='./js/controllers/skills_controller.js'></script>
-		<script type="text/javascript" src='./js/controllers/resumes_controller.js'></script>
-		<script type="text/javascript" src='./js/controllers/projects_controller.js'></script>
 	</head>
 	<body ng-app='myApp'>
 		<div ng-view=''>
 		</div>
 	</body>
+	<!-- Routes -->
+	<script type="text/javascript" src='./js/routes.js'></script>
+	<!-- Factories -->
+	<script type="text/javascript" src='./js/factories/sub_catagory_factory.js'></script>
+	<script type="text/javascript" src='./js/factories/workflow_factory.js'></script>
+	<script type="text/javascript" src='./js/factories/skill_factory.js'></script>
+	<script type="text/javascript" src='./js/factories/project_factory.js'></script>
+	<script type="text/javascript" src='./js/factories/resume_factory.js'></script>
+	<!-- Controllers -->
+	<script type="text/javascript" src='./js/controllers/sub_catagories_controller.js'></script>
+	<script type="text/javascript" src='./js/controllers/workflow_controller.js'></script>
+	<script type="text/javascript" src='./js/controllers/skills_controller.js'></script>
+	<script type="text/javascript" src='./js/controllers/resumes_controller.js'></script>
+	<script type="text/javascript" src='./js/controllers/projects_controller.js'></script>
 </html>
