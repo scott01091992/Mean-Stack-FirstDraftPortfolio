@@ -10,7 +10,7 @@ myApp.controller('workflow_controller', function($location, $timeout, $scope, wo
 		myEl.addClass('workflow_animate_out');
 		$timeout(function(){
 			$location.path('/'+where);
-		}, 3000);
+		}, 1000);
 	}
 
 });

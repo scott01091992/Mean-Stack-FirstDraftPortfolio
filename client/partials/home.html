@@ -1,10 +1,11 @@
-
 	<div id='welcome_page' class='container home_animate_in' ng-controller='sub_catagories_controller'>
 		<header class='row'>
 			<div id='background_img'></div>
 			<section class='col-xs-12'>
-					<img id='main_img' src='./assets/{{main_img.main_img}}'>
-					<h1>Web Dev Portfolio</h1>
+					<div>
+						<img ng-click="open('Interview')" id='main_img' src='./assets/{{main_img.main_img}}'>
+						<h1 ng-click="open('Interview')">Who is Brandon J Scott?</h1>
+					</div>
 			</section>
 		</header>
 		<main class='row'>
@@ -16,6 +17,6 @@
 			</section>
 		</main>
 		<footer class='row'>
-			<h3>Designed By: Brandon Scott<h3>
+			<h3>Designer | Developer<h3>
 		</footer>
 	</div>

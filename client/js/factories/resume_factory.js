@@ -46,14 +46,14 @@ myApp.factory('resume_factory', function(){
            {
              head: "Independent Driver",
              company: " | Instacart",
-             date: "August 2012 - Present",
+             date: "Aug 2012 - Present",
              list: ["Deliver groceries within 1 hour timeframes to clients in Seattle and Bellevue",
                     "Work 60+ hour weeks independently, responsible for each contract that is accepted"]
            },
            {
              head: "Assistant Manager",
              company: " | Pizza Hut",
-             date: "February 2012 – August 2012",
+             date: "Feb 2012 – Aug 2012",
              list: ["Promoted to assistant manager within the second month of employment",
                     "Manage operations 45+ hours per week, discuss and implement policies with GM"]
            }

@@ -87,7 +87,7 @@ body {
 #welcome_page {
   overflow-x: hidden;
   background-color: #eee;
-  padding-bottom: 8em;
+  padding: 6em 0 8em 0;
   box-shadow: 0 0 1em .2em;
   position: relative; }
   #welcome_page #background_img {
@@ -120,9 +120,12 @@ body {
     transform: scale(1); } }
       #welcome_page header section h1 {
         padding-top: 1em;
-        font-family: Impact, Charcoal, sans-serif;
-        font-size: 3.5em;
-        color: white; }
+        font-family: meridians;
+        font-size: 4.5em;
+        letter-spacing: 5pt;
+        color: white;
+        font-weight: bolder;
+        text-shadow: 0 0 0.7em #EFA92F; }
   #welcome_page main section {
     margin-top: 5em;
     display: flex;
@@ -143,7 +146,10 @@ body {
         box-shadow: 0 0 1em .1em; }
       #welcome_page main section figure h2 {
         text-shadow: 0.0em 0.0em 0.02em;
-        color: white; }
+        color: white;
+        font-family: meridians;
+        font-weight: bold;
+        text-shadow: 0 0 0.7em #EFA92F; }
     #welcome_page main section figure:nth-child(1) > img {
       transform: translate(-50em, 50em);
       animation: hop-in 3s linear forwards; }
@@ -216,14 +222,15 @@ body {
     #welcome_page footer h3 {
       font-style: italic;
       text-shadow: 0.0em 0.0em 0.03em;
-      color: white; }
+      color: white;
+      font-family: meridians; }
 
 #side_nav {
   position: fixed;
   right: 0;
   top: 0;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   border-radius: 1em;
   box-shadow: 0 0 .3em .2em;
   margin: .5em;
@@ -237,7 +244,7 @@ body {
     display: none; }
 
 #side_nav:hover {
-  box-shadow: 0 0 0.3em 0.2em #EFA92F;
+  box-shadow: 0 0 0.3em 0.2em #6dd85d;
   z-index: 1; }
   #side_nav:hover #slide_out_nav {
     display: block;
@@ -247,7 +254,7 @@ body {
     width: 11em;
     left: -11em;
     top: 1em;
-    background-color: #6dd85d;
+    background-color: white;
     box-shadow: 0 0 .2em .2em; }
     #side_nav:hover #slide_out_nav .nav_selection {
       display: flex;
@@ -326,7 +333,7 @@ body {
       font-size: 1.5em;
       transition: box-shadow 2sec; }
     #skills_page nav article:hover {
-      box-shadow: 0 0 .5em .2em orange; }
+      box-shadow: 0 0 .5em .2em black; }
 @keyframes first-orbit {
   0% {
     opacity: 0;
@@ -476,6 +483,11 @@ body {
     display: inline-block; }
   #resume_page article summary ul li {
     max-width: 80%; }
+  #resume_page .download {
+    text-align: center;
+    display: block;
+    padding-top: 2em;
+    font-weight: bold; }
 
 #workflow_page {
   overflow-x: hidden;
@@ -512,8 +524,7 @@ body {
     animation: slide_in 2s ease-in-out forwards; }
     #workflow_page article section {
       padding: 1em 2em 2em 2em;
-      position: relative;
-      background-color: white; }
+      position: relative; }
       #workflow_page article section h2 {
         font-family: med-title;
         text-align: center;
@@ -534,11 +545,7 @@ body {
           font-size: 1.5em; }
       #workflow_page article section img {
         height: 15em;
-        width: 15em;
-        position: absolute;
-        right: 3em;
-        bottom: 3em;
-        display: inline-block; }
+        width: 15em; }
 
 #projects_page {
   overflow-x: hidden;
@@ -590,9 +597,10 @@ body {
       font-style: italic;
       font-weight: bold; }
     #projects_page section .top h4 {
-      font-family: handwriting;
+      font-family: meridians;
       text-indent: 2.5em;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      font-weight: bold; }
     #projects_page section .bottom h3 {
       font-family: meridians;
       font-size: 2em;
@@ -606,7 +614,9 @@ body {
       padding-right: 3em; }
     #projects_page section p {
       text-align: center;
-      padding-top: 1.5em; }
+      padding-top: 1.5em;
+      font-family: handwriting;
+      font-size: 1.3em; }
     #projects_page section article {
       width: 100%;
       display: flex;

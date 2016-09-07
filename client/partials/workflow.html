@@ -16,11 +16,11 @@
 			<h2>{{task.name}}</h2>
 			<summary>{{task.description}}</summary>
 		</section>
-		<section>
-			<ul>
+		<section class='row'>
+			<ul class='col-xs-8'>
 				<li ng-repeat="step in task.steps">Step {{$index+1}}: {{step.step}}</li>
 			</ul>
-			<img ng-src="./../assets/{{task.img}}">
+			<img class='col-xs-4' ng-src="./../assets/{{task.img}}">
 		</section>
 	</article>
 </div>

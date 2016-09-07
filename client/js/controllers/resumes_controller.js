@@ -10,7 +10,7 @@ myApp.controller('resumes_controller', function($location, $timeout, $scope, res
 		myEl.addClass('resume_animate_out');
 		$timeout(function(){
 			$location.path('/'+where);
-		}, 3000);
+		}, 1000);
 	}
 
 });

@@ -298,7 +298,7 @@ myApp.factory('workflow_factory', function(){
 					{step: "Set up a wiki"},
 					{step: "Document everything about site"},
 					{step: "Make sure everything that could be relevant is documented"},
-					{step: "Include useful snippets such as fake user info or fake gps coordinates to test with"},
+					{step: "Include useful snippets"},
 					{step: "Break rendered code into snippets and show the code alongside it"}
 				]
 			}

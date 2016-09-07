@@ -10,7 +10,7 @@ myApp.controller('projects_controller', function($location, $timeout, $scope, pr
 		myEl.addClass('projects_animate_out');
 		$timeout(function(){
 			$location.path('/'+where);
-		}, 3000);
+		}, 1000);
 	}
 
 });

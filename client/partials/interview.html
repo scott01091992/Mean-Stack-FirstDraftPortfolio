@@ -1,0 +1,24 @@
+  <div id='background_img' class='animate_background'></div>
+	<div id='interview_page' class='container interview_animate_in' ng-controller='interviews_controller'>
+    <header>
+      <div id='side_nav'><img src='./assets/navigation_hidden.png'>
+        <div id='slide_out_nav'>
+          <div ng-click="open('home')" class='nav_selection'>Home</div>
+          <div class='nav_selection'>Skills</div>
+          <div ng-click="open('Resume')" class='nav_selection'>Resume</div>
+          <div ng-click="open('Workflow')" class='nav_selection'>Workflow</div>
+          <div ng-click="open('Projects')" class='nav_selection'>Projects</div>
+        </div>
+      </div>
+      <a class='back' ng-click="open('home')"><img class='home_button' src='./assets/back_button.png'></a>
+      <h1>Interview Me</h1>
+    </header>
+    <main>
+      <article ng-repeat="question in questions">
+        <p>Q : {{question.question}}</p>
+        <section><p>A : {{question.answer}}</p><section>
+      </article>
+    </main>
+    <footer>
+    </footer>
+	</div>

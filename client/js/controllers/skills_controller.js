@@ -40,7 +40,7 @@ myApp.controller('skills_controller', function($location, $timeout, $scope, skil
 		myEl.addClass('skills_animate_out');
 		$timeout(function(){
 			$location.path('/'+where);
-		}, 3000);
+		}, 1000);
 	}
 
 });
