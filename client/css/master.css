@@ -5556,15 +5556,9 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-@media (min-width: 1200px) {
-  .container {
-    width: 1300px; } }
-@media (min-width: 990px) {
-  .container {
-    width: 1200px; } }
-@media (min-width: 800px) {
-  .container {
-    width: 1000px; } }
+body {
+  font-size: 8px; }
+
 ::-webkit-scrollbar {
   display: none; }
 
@@ -5754,7 +5748,7 @@ body {
     background-size: cover;
     -webkit-filter: blur(2px); }
   #welcome_page header {
-    padding-top: 11%; }
+    padding-top: 9%; }
     #welcome_page header section {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -5792,20 +5786,44 @@ body {
       #welcome_page header section h1 {
         padding-top: 1em;
         font-family: meridians;
-        font-size: 3.5em;
-        letter-spacing: 5pt;
+        font-size: 4.5em;
+        letter-spacing: 4.5pt;
         color: white;
         font-weight: bolder;
-        text-shadow: 0 0 .7em white;
+        text-shadow: 0 0 .4em white;
         -webkit-transition: all 1s;
         transition: all 1s; }
       #welcome_page header section div {
         text-align: center; }
+        #welcome_page header section div div {
+          display: inline-block;
+          margin-left: .5em; }
+@keyframes bouncing {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0, -3.5vh); }
+  100% {
+    transform: translate(0, 0); } }
       #welcome_page header section div:hover img {
-        -webkit-filter: sepia(0.2); }
+        -webkit-filter: sepia(0.5); }
       #welcome_page header section div:hover h1 {
-        text-shadow: 0 0 1em #1880a0;
-        font-style: italic; }
+        text-shadow: 0 0 1em white; }
+        #welcome_page header section div:hover h1 div {
+          display: inline-block;
+          border-bottom: 1px solid white; }
+        #welcome_page header section div:hover h1 .bounce:nth-child(1) {
+          animation: bouncing 1.5s linear calc(0s / 3) infinite; }
+        #welcome_page header section div:hover h1 .bounce:nth-child(2) {
+          animation: bouncing 1.5s linear calc(1s / 3) infinite; }
+        #welcome_page header section div:hover h1 .bounce:nth-child(3) {
+          animation: bouncing 1.5s linear calc(2s / 3) infinite; }
+        #welcome_page header section div:hover h1 .bounce:nth-child(4) {
+          animation: bouncing 1.5s linear calc(3s / 3) infinite; }
+        #welcome_page header section div:hover h1 .bounce:nth-child(5) {
+          animation: bouncing 1.5s linear calc(4s / 3) infinite; }
+        #welcome_page header section div:hover h1 .bounce:nth-child(6) {
+          animation: bouncing 1.5s linear calc(5s / 3) infinite; }
   #welcome_page main section {
     margin-top: 5em;
     display: -webkit-box;
@@ -6028,8 +6046,8 @@ body {
 
 #side_nav {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 3em;
+  top: 3em;
   width: 4em;
   height: 4em;
   border-radius: 1em;
@@ -6084,7 +6102,8 @@ body {
   padding-bottom: 8em;
   box-shadow: 0 0 1em .2em;
   position: relative;
-  margin-top: 1.5em; }
+  margin-top: 1.5em;
+  font-size: 10px; }
   #skills_page #background_img {
     z-index: 0;
     position: absolute;
@@ -6342,6 +6361,7 @@ body {
   100% {
     box-shadow: 0 0 0 0; } }
 #resume_page {
+  font-size: 10.5px;
   overflow-x: hidden;
   background-color: white;
   padding: 3em 3em 6em 3em;
@@ -6408,7 +6428,8 @@ body {
   padding: 3em 3em 6em 3em;
   position: relative;
   margin-top: 1.5em;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  font-size: 11px; }
   #workflow_page .back {
     position: absolute;
     left: 3em; }
@@ -6442,8 +6463,9 @@ body {
     transform: translate(0, 0); } }
   #workflow_page article {
     opacity: 0;
-    border: .4em solid black;
-    margin-bottom: -.4em;
+    border: .2em dashed black;
+    box-shadow: 0 0 3.6em .7em black;
+    margin-bottom: -.2em;
     position: relative;
     -webkit-animation: slide_in 2s ease-in-out forwards;
     animation: slide_in 2s ease-in-out forwards; }
@@ -6454,8 +6476,8 @@ body {
         font-family: meridians;
         font-weight: bolder;
         text-align: center;
-        padding: .5em 0 .5em 0;
-        font-size: 3.5em;
+        padding: .3em 0 0 0;
+        font-size: 7.5em;
         margin-bottom: 20px; }
       #workflow_page article section summary {
         font-family: regular;
@@ -6464,7 +6486,8 @@ body {
         padding: 0 5em 0 5em;
         font-style: italic; }
       #workflow_page article section ul {
-        padding: 0; }
+        padding: 0;
+        margin-left: 4em; }
         #workflow_page article section ul li {
           list-style-type: none;
           font-family: meridians;
@@ -6480,7 +6503,8 @@ body {
   padding-bottom: 8em;
   box-shadow: 0 0 1em .2em;
   position: relative;
-  margin-top: 1.5em; }
+  margin-top: 1.5em;
+  font-size: 12px; }
   #projects_page header {
     position: relative;
     overflow: hidden;
@@ -6561,8 +6585,8 @@ body {
       padding: 1em;
       margin: 0; }
       #projects_page section article img {
-        width: 90%;
-        height: 40em; }
+        width: 95%;
+        height: 50em; }
     #projects_page section a {
       display: block;
       text-align: center;

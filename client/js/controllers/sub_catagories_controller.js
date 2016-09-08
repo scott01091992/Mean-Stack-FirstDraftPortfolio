@@ -14,7 +14,7 @@ myApp.controller('sub_catagories_controller', function($location, $rootScope, $t
 		myEl.addClass('home_animate_out');
 		$timeout(function(){
 			$location.path('/'+where);
-		}, 3000);
+		}, 3200);
 	}
 
 
