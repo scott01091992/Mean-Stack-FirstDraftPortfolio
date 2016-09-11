@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Bootstrap v3.3.6
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -5572,57 +5572,23 @@ body {
   font-family: regular;
   src: url("./../assets/Amble-Regular.ttf"); }
 @font-face {
-  font-family: handwriting;
-  src: url("./../assets/hands.ttf"); }
+  font-family: black;
+  src: url("./../assets/black.otf"); }
 @font-face {
   font-family: med-title;
   src: url("./../assets/medium.ttf"); }
 @font-face {
   font-family: meridians;
   src: url("./../assets/basicfont.ttf"); }
-@-webkit-keyframes drop_in {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate(0, -100%);
-    transform: translate(0, -100%); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
 @keyframes drop_in {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0, -100%);
-    transform: translate(0, -100%); }
+    -webkit-transform: translate(0, -100vh);
+    transform: translate(0, -100vh); }
   100% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
-@-webkit-keyframes swing {
-  0% {
-    opacity: 1;
-    -webkit-transform: translate(0, 0) rotate(0deg);
-    transform: translate(0, 0) rotate(0deg);
-    -webkit-transform-origin: left top;
-    transform-origin: left top; }
-  20% {
-    opacity: .9;
-    -webkit-transform: translate(0, 0) rotate(100deg);
-    transform: translate(0, 0) rotate(100deg);
-    -webkit-transform-origin: left top;
-    transform-origin: left top; }
-  50% {
-    opacity: .8;
-    -webkit-transform: translate(0, 0) rotate(70deg);
-    transform: translate(0, 0) rotate(70deg);
-    -webkit-transform-origin: left top;
-    transform-origin: left top; }
-  100% {
-    opacity: .5;
-    -webkit-transform: translate(0, 200%) rotate(100deg);
-    transform: translate(0, 200%) rotate(100deg);
-    -webkit-transform-origin: left top;
-    transform-origin: left top; } }
 @keyframes swing {
   0% {
     opacity: 1;
@@ -5648,15 +5614,6 @@ body {
     transform: translate(0, 200%) rotate(100deg);
     -webkit-transform-origin: left top;
     transform-origin: left top; } }
-@-webkit-keyframes slideout {
-  0% {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate(-200%, 0);
-    transform: translate(-200%, 0); } }
 @keyframes slideout {
   0% {
     opacity: 1;
@@ -5664,29 +5621,20 @@ body {
     transform: translate(0, 0); }
   100% {
     opacity: 0;
-    -webkit-transform: translate(-200%, 0);
-    transform: translate(-200%, 0); } }
-@-webkit-keyframes slidein {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate(-200%, 0);
-    transform: translate(-200%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
+    -webkit-transform: translate(-100vw, 0);
+    transform: translate(-100vw, 0); } }
 @keyframes slidein {
   0% {
     opacity: 0;
-    -webkit-transform: translate(-200%, 0);
-    transform: translate(-200%, 0); }
+    -webkit-transform: translate(-100vw, 0);
+    transform: translate(-100vw, 0); }
   100% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
 .home_animate_in {
-  -webkit-animation: drop_in 2s ease-in-out forwards;
-  animation: drop_in 2s ease-in-out forwards; }
+  -webkit-animation: drop_in 2s ease-in forwards;
+  animation: drop_in 2s ease-in forwards; }
 
 .home_animate_out {
   -webkit-animation: swing 3s ease-in-out forwards;
@@ -5732,6 +5680,58 @@ body {
   -webkit-animation: slideout 2s ease-in-out forwards;
   animation: slideout 2s ease-in-out forwards; }
 
+@media (max-width: 1200px) {
+  #workflow_page h1 {
+    transform: scale(0.8); }
+  #workflow_page article section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #workflow_page article section h2 {
+      transform: scale(0.6); }
+    #workflow_page article section summary {
+      padding: 0 1em 0 1em;
+      text-align: center; }
+    #workflow_page article section img {
+      margin-top: 2em;
+      margin-bottom: 2em; } }
+@media (max-width: 640px) {
+  #projects_page header h1 {
+    padding-left: 0; }
+
+  #resume_page header h1 {
+    padding-top: 2em; }
+
+  #skills_page header a {
+    position: absolute;
+    left: 3em;
+    top: 3em; }
+  #skills_page header h1 {
+    padding-top: .6em; }
+  #skills_page main section article div img {
+    transform: scale(0.5);
+    position: absolute;
+    right: 0;
+    top: 5em; }
+
+  #welcome_page header section {
+    flex-direction: column; }
+    #welcome_page header section div:hover h1 div:nth-child(1) {
+      display: none; }
+    #welcome_page header section div:hover h1 div:nth-child(2) {
+      display: none; }
+    #welcome_page header section div:hover h1 div:nth-child(6) {
+      display: none; }
+    #welcome_page header section div h1 div:nth-child(1) {
+      display: none; }
+    #welcome_page header section div h1 div:nth-child(2) {
+      display: none; }
+    #welcome_page header section div h1 div:nth-child(6) {
+      display: none; }
+  #welcome_page main section {
+    flex-direction: column; }
+    #welcome_page main section figure {
+      font-size: 13px; } }
 #welcome_page {
   overflow-x: hidden;
   background-color: #eee;
@@ -5762,9 +5762,10 @@ body {
       -ms-flex-flow: column;
       flex-flow: column; }
       #welcome_page header section img {
-        height: 25em;
-        width: 25em;
+        height: 33em;
+        width: 33em;
         border-radius: 50%;
+        -webkit-filter: contrast(1.2);
         border: .5em solid white;
         box-shadow: 0 0 1em .2em white;
         -webkit-animation: zoom 3s ease-in-out forwards;
@@ -5806,7 +5807,7 @@ body {
   100% {
     transform: translate(0, 0); } }
       #welcome_page header section div:hover img {
-        -webkit-filter: sepia(0.5); }
+        -webkit-filter: contrast(0.9); }
       #welcome_page header section div:hover h1 {
         text-shadow: 0 0 1em white; }
         #welcome_page header section div:hover h1 div {
@@ -6199,7 +6200,7 @@ body {
       -webkit-transform-origin: center;
       transform-origin: center;
       opacity: 0;
-      font-family: handwriting;
+      font-family: regular;
       font-weight: bolder;
       font-size: 1.7em;
       -webkit-transition: box-shadow 2sec;
@@ -6335,7 +6336,7 @@ body {
       z-index: 1; }
       #skills_page footer a button {
         margin: 1em;
-        font-family: handwriting;
+        font-family: regular;
         border-radius: 50%;
         height: 8em;
         width: 8em;
@@ -6371,6 +6372,7 @@ body {
   #resume_page .back {
     position: absolute;
     left: 3em;
+    top: 2em;
     z-index: 1; }
     #resume_page .back img {
       height: 4.5em;
@@ -6379,26 +6381,36 @@ body {
   #resume_page header {
     text-align: center; }
     #resume_page header h1 {
-      font-family: meridians;
+      font-family: black;
       font-weight: bolder;
       font-size: 5em;
-      padding-top: 1em; }
+      padding-top: .8em; }
+      #resume_page header h1 span {
+        font-size: 1.3em; }
     #resume_page header p {
-      font-size: 1.3em; }
+      font-size: 1.3em;
+      color: black; }
+      #resume_page header p span {
+        font-weight: bold; }
     #resume_page header a {
       display: block;
       margin: auto;
-      font-size: 1.3em; }
+      font-size: 1.3em;
+      color: black; }
+      #resume_page header a span {
+        font-weight: bold; }
   #resume_page section {
     text-align: center; }
     #resume_page section h2 {
-      font-size: 2.3em; }
-    #resume_page section h3 {
-      font-size: 1.5em; }
+      font-size: 3em;
+      font-family: black;
+      letter-spacing: 1px;
+      font-style: italic; }
   #resume_page article h4 {
-    margin-top: 2em;
+    margin-top: 1em;
     font-weight: bold;
-    font-size: 1.5em; }
+    font-size: 2.5em;
+    font-family: black; }
   #resume_page article summary h5 {
     font-weight: bold;
     display: inline-block;
@@ -6414,7 +6426,8 @@ body {
     display: inline-block; }
   #resume_page article summary ul li {
     max-width: 85%;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    opacity: .8; }
   #resume_page .download {
     text-align: center;
     display: block;
@@ -6440,9 +6453,9 @@ body {
   #workflow_page h1 {
     text-align: center;
     font-family: sketch;
-    font-size: 4.5em;
+    font-size: 7.5em;
     margin-top: 0;
-    margin-bottom: .8em; }
+    margin-bottom: .3em; }
 @-webkit-keyframes slide_in {
   0% {
     opacity: 0;
@@ -6463,7 +6476,7 @@ body {
     transform: translate(0, 0); } }
   #workflow_page article {
     opacity: 0;
-    border: .2em dashed black;
+    border: .2em solid black;
     box-shadow: 0 0 3.6em .7em black;
     margin-bottom: -.2em;
     position: relative;
@@ -6473,7 +6486,7 @@ body {
       padding: 1em 2em 2em 2em;
       position: relative; }
       #workflow_page article section h2 {
-        font-family: meridians;
+        font-family: black;
         font-weight: bolder;
         text-align: center;
         padding: .3em 0 0 0;
@@ -6481,10 +6494,8 @@ body {
         margin-bottom: 20px; }
       #workflow_page article section summary {
         font-family: regular;
-        font-weight: bolder;
         font-size: 1.7em;
-        padding: 0 5em 0 5em;
-        font-style: italic; }
+        padding: 0 5em 0 5em; }
       #workflow_page article section ul {
         padding: 0;
         margin-left: 4em; }
@@ -6493,10 +6504,11 @@ body {
           font-family: meridians;
           font-weight: bolder;
           padding: .4em;
-          font-size: 1.5em; }
+          font-style: italic;
+          font-size: 2em; }
       #workflow_page article section img {
-        height: 15em;
-        width: 15em; }
+        height: 20em;
+        width: 23em; }
 
 #projects_page {
   overflow-x: hidden;
@@ -6504,21 +6516,21 @@ body {
   box-shadow: 0 0 1em .2em;
   position: relative;
   margin-top: 1.5em;
-  font-size: 12px; }
+  font-size: 10px; }
   #projects_page header {
     position: relative;
     overflow: hidden;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 4em;
     box-shadow: 0 0 .6em .2em; }
     #projects_page header h1 {
       box-shadow: 0 0 .3em 1em;
       text-align: center;
       font-family: sketch;
-      font-size: 4.5em;
-      margin: 1em 0 1em 0;
-      padding-left: 6em;
+      font-size: 6.5em;
+      margin: 0;
       padding-bottom: 1.4em;
-      padding-top: .5em; }
+      padding-top: 1.5em; }
     #projects_page header .title_cover {
       background-color: #1880a0;
       width: 200%;
@@ -6526,12 +6538,13 @@ body {
       position: absolute;
       bottom: -43em;
       left: -5em;
+      z-index: -1;
       -webkit-transform: rotate(6deg);
       transform: rotate(6deg); }
     #projects_page header .back {
       position: absolute;
       left: 3em;
-      top: 6em;
+      top: 3em;
       z-index: 1; }
       #projects_page header .back img {
         height: 4.5em;
@@ -6585,8 +6598,8 @@ body {
       padding: 1em;
       margin: 0; }
       #projects_page section article img {
-        width: 95%;
-        height: 50em; }
+        height: 45vw;
+        width: 70vw; }
     #projects_page section a {
       display: block;
       text-align: center;
@@ -6605,6 +6618,9 @@ body {
     position: absolute;
     left: .5em; }
     #interview_page .back img {
+      position: absolute;
+      left: 2em;
+      top: 2em;
       height: 4.5em;
       width: 4.5em;
       border-radius: 50%; }

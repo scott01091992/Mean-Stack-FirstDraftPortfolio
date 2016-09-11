@@ -12,7 +12,7 @@ myApp.factory('resume_factory', function(){
                     "JavaScript Frameworks: JQuery, React.js, Underscore.js, Backbone.js",
                     "LAMP: Linux, Apache, MySQL, PHP, CodeIgniter, Ajax",
                     "Restful Route Architecture, MVC Architecture, Object Oriented Programming",
-                    "HTML, CSS, SCSS, Photoshop, MS Word, UML, Git, Bootstrap, AWS, XHTML, JSX, SEO, API’s"]
+                    "HTML, CSS, SCSS, Photoshop, Illustrator, MS Word, UML, Git, Bootstrap, AWS, XHTML, JSX, SEO, API’s"]
            },
            {
              head: "Customer Service & Leadership",

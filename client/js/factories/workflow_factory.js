@@ -6,7 +6,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Brainstorming",
 				img: "brainstorm.png",
-				description: "During this phase we are determining what the projects goals are and understanding how ambious the project is upfront.",
+				description: "During this phase I am determining what the projects goals are and understanding how ambious the project is upfront.",
 				steps: [
 					{step: "What will the app do?"},
 					{step: "Who is the target audience?"},
@@ -19,7 +19,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Research",
 				img: "research.png",
-				description: "Here we are finding out more about the target audience, what kinds of assets will speak to that audience, and what do we need to know to get started.",
+				description: "Here I am discovering more about the target audience, what kinds of assets will speak to that audience, and what do I need to know to get started.",
 				steps: [
 					{step: "Demographic Research"},
 					{step: "Surveys"},
@@ -32,7 +32,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Database Schema",
 				img: "database.png",
-				description: "Now that we know what the project is, and have some information on what it will accomplish; it is time to layout the data.",
+				description: "Now that I have a good idea of what the project is, and have some information on what it will accomplish; it is time to organize the data.",
 				steps: [
 					{step: "List out what data is needed"},
 					{step: "Break data down into tables"},
@@ -44,7 +44,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "UML Models",
 				img: "uml.png",
-				description: "During this phase we are writing out which objects will be created. Then we need to assign properties and functions to the objects. This will give us a better understanding of the relationships between components in the application",
+				description: "During this phase I write out which objects will be created. Then I will assign properties and functions to the objects. This will give me a better understanding of the relationships between components in the application",
 				steps: [
 					{step: "List the objects"},
 					{step: "Map the relationships between the objects"},
@@ -56,7 +56,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Wireframing",
 				img: "wireframe.png",
-				description: "Create wireframe of the application. Layout each of the pages focusing on the general features of each page. Details are less important than layout and functionality during this phase.",
+				description: "Here I create wireframe of the application. Layout each of the pages focusing on the general features of each page. Details are less important than layout and functionality during this phase.",
 				steps: [
 					{step: "Plan out pages and where they take you"},
 					{step: "Map out where content will be placed and how the general layout will look"},
@@ -68,7 +68,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Assets",
 				img: "assets.png",
-				description: "Now it is time to fill in the blanks of the wireframe. Gather and create all the necessary assets to prepare for the final stage of design.",
+				description: "Now that I have a general idea of the content that each page will contain, it is time to fill in the blanks of the wireframe. Gather and create all the necessary assets to prepare for the final stage of design.",
 				steps: [
 					{step: "Choose a color scheme"},
 					{step: "Pick fonts"},
@@ -81,7 +81,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Photoshop",
 				img: "photoshop.png",
-				description: "Get deep into the design of the website with photoshop. This is where you can bring togther the wireframe and the assets to really get creative.",
+				description: "Get deep into the design of the website with photoshop. This is where I will bring togther the wireframe and the assets to really get creative.",
 				steps: [
 					{step: "Build the main page"},
 					{step: "Be creative"},
@@ -93,7 +93,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "HTML5",
 				img: "html.png",
-				description: "Build out the HTML of the site. The final HTML should be ordered in an organized fashion and have the CSS and dynamic content considered.",
+				description: "With a design in place, I build out the HTML of the site. The final HTML should be ordered in an organized fashion and have the CSS and dynamic content considered.",
 				steps: [
 					{step: "Code the HTML"},
 					{step: "Look for patterns or dynamic content in the HTML and break it into repeatable chunks"},
@@ -105,7 +105,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "SEO",
 				img: "seo.png",
-				description: "Now that there is HTML in place we can check take a second to consider search engine optimization. Use industry guidelines and tools to make sure it is up to standards.",
+				description: "Now that there is HTML in place I can check take a second to consider search engine optimization. I use industry guidelines and tools to make sure it is up to standards.",
 				steps: [
 					{step: "Set up google analytics"},
 					{step: "Choose a domain name"},
@@ -118,7 +118,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "SCSS/Compass",
 				img: "scss.png",
-				description: "Time to add in some CSS/SCSS. Remember that simple is better and SCSS variables are your friends.",
+				description: "Time to add in some CSS/SCSS. Simple is better during this phase. I always avoid using static units like pixels to prepare to make the site responsive.",
 				steps: [
 					{step: "Style pages"},
 					{step: "create variables and loops"},
@@ -131,7 +131,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "RWD",
 				img: "rwd.png",
-				description: "Add media queries to allow for views on other devices. Make sure not to use too many breakpoints",
+				description: "With CSS in place, I add media queries to allow for views on other devices. Simple is better here as well. I will always try to keep breakpoints to a minimum.",
 				steps: [
 					{step: "Edit SCSS for Desktops"},
 					{step: "Create Laptops breakpoint"},
@@ -144,7 +144,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Animations",
 				img: "animation.png",
-				description: "Time to get creative with animations. It is important to use animations to direct the user experience. Animations can be vital to communicating with the user. Make sure the animations have life to them, when animations behave in abstract ways it can be disorienting to the user.",
+				description: "Time to get creative with animations. It is important to use animations to direct the user experience. Animations are vital to communicating with the user throughout the site. I like to make sure the animations have life to them, when animations behave in abstract ways it can be disorienting to the user.",
 				steps: [
 					{step: "Build Animations out separately"},
 					{step: "Consider the User Experience"},
@@ -156,7 +156,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "MVC",
 				img: "mvc.png",
-				description: "Build out the framework on the front end. This will be adding the framework for the controller and model, then attaching the already created partials as the views.",
+				description: "Here I build out the framework on the front end. This is just adding the framework for the controller and model, then attaching the already created partials as the views.",
 				steps: [
 					{step: "Build out the file structure"},
 					{step: "Create model view controller"},
@@ -168,7 +168,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Database",
 				img: "schema.png",
-				description: "Create the database and get the schemas in place. Make sure that all of the data is there, it can be difficult to make database changes later on in the cycle.",
+				description: "Create the database and get the schemas in place. I always make sure that all of the data is there, it can be difficult to make database changes later on in the cycle.",
 				steps: [
 					{step: "Draw out the schema"},
 					{step: "Create each schema in code"},
@@ -180,7 +180,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Requests",
 				img: "requests.png",
-				description: "Now that the database is set up, we need to handle incoming requests to the server. Each request should have a function that is called to handle it.",
+				description: "Now that the database is set up, I need to handle incoming requests to the server. Each request should have a function that is called to handle it.",
 				steps: [
 					{step: "Set up a routes file"},
 					{step: "Write out GET POST DELETE PATCH requests"},
@@ -193,7 +193,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Validations",
 				img: "validations.png",
-				description: "Catch Errors from user and display what problems they might be facing. Form validations are the most common validations, but there are other validations such as letting the user know they must log in to access content will need to be handled.",
+				description: "This phase is to simply catch errors display what problems may be occuring. Form validations are the most common validations, but there are other validations such as letting the user know they must log in to access content will need to be handled.",
 				steps: [
 					{step: "Create Form Validations"},
 					{step: "Create validation errors for the user"},
@@ -205,7 +205,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Web Security",
 				img: "websecurity.png",
-				description: "Now we must ensure we are protected against common attacks. This is just ensuring sensitive information is encrypted and that only the indended incoming data is read by the server.",
+				description: "Now I must ensure that the client is protected against common attacks. This is just ensuring sensitive information is encrypted and that only indended incoming data is read by the server.",
 				steps: [
 					{step: "Minimize the ammount of information is served"},
 					{step: "Encrypt data where needed"},
@@ -217,7 +217,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Web Performance",
 				img: "webperformance.png",
-				description: "Now the site should feel more or less finished, but there is still work to be done. Lets make the site faster.",
+				description: "Now the site should feel more or less finished, but there is still work to be done. This phase is all about limiting requests to the server, and shrinking file sizes. In some cases algorithms will need to be optimized as well.",
 				steps: [
 					{step: "Minimize files"},
 					{step: "CSS in head Javascript after body"},
@@ -242,7 +242,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Cross-Browser Optimization",
 				img: "crossbrowser.png",
-				description: "Now the site might be good for a majority of your users, but we need to work on getting this working for everyone.",
+				description: "Now the site might be good for a majority of users, but there are still other browsers to consider.",
 				steps: [
 					{step: "Add webkits to css"},
 					{step: "Build a Mobile App if necessary"},
@@ -255,7 +255,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Web Accessibility",
 				img: "accessibility.png",
-				description: "Now the site works for a majority of users, lets bring in special cases as well.",
+				description: "This phase is all about making sure anyone who visits can easily navigate and get the information they need.",
 				steps: [
 					{step: "Is the site blind user friendly?"},
 					{step: "Is the site deaf user friendly?"},
@@ -267,7 +267,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Bux Fixes",
 				img: "bugfix.png",
-				description: "This is the final step before the code is deployed. Make sure you are happy with what you have built, and check for any bugs or changes that need to be handled.",
+				description: "Now I go back, make sure that I am happy with what I built, and check for any bugs or changes that need to be handled.",
 				steps: [
 					{step: "Click through all possible user paths"},
 					{step: "Stress all inputs with all data types"},
@@ -280,7 +280,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Deployment",
 				img: "deployment.png",
-				description: "Put the code in the cloud. Time to make the site public and visible.",
+				description: "After the site is production ready, it goes into the cloud.",
 				steps: [
 					{step: "Choose deployment platform"},
 					{step: "Deploy the code to the cloud"},
@@ -293,7 +293,7 @@ myApp.factory('workflow_factory', function(){
 			{
 				name: "Documentation",
 				img: "document.png",
-				description: "Well the coding is done, but its time to document everything possible. It's still fresh in your mind, so take advantage of that.",
+				description: "Well the coding is done, but I like to document everything I can for future reference. It's still fresh in my mind so I take advantage of that.",
 				steps: [
 					{step: "Set up a wiki"},
 					{step: "Document everything about site"},
